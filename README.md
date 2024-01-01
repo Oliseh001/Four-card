@@ -27,7 +27,7 @@ Users should be able to:
 ![](./images/Screenshot%20Four%20card%20feature%20section%20Desktop.png)
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://oliseh001.github.io/Four-card/)
 
 ## My process
 

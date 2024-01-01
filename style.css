@@ -1,80 +1,105 @@
 *{
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
-    /* height: 100svh; */
 }
 body{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 }
 h2{
-    color:  hsl(229, 6%, 66%);
-    font-size: 1.5rem;
-    font-weight: 400;
-    margin-bottom: 0;
-    margin-left: 5px;
+text-align: center; /* center the text*/
+color:  hsl(229, 6%, 66%);
+font-size: 1.5rem;
+font-weight: 400;
+margin-bottom: 0;
+margin-left: 5px;
 }
 h3{
-    color: hsl(234, 12%, 34%);
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-top: 20px;
-    margin: 20px 0 0 20px;
+color: hsl(234, 12%, 34%);
+font-size: 1.5rem;
+font-weight: 600;
+margin-top: 20px;
+margin: 20px 0 0 20px;
 }
-.powered{
-    color: hsl(234, 12%, 34%);
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin: 0 0 15px 5px;
-    padding: 5px 5px 5px 5px;
-
-}
-
 p{
-    color:  hsl(0, 4%, 78%);
-    font-size: 1rem;
-    font-weight: 300;
-    margin: 0 0 20px 20px;
+color:  hsl(0, 0%, 70%);
+font-size: 1rem;
+font-weight: 300;
+margin: 0 0 20px 20px;
 
 }
 .art{
-    margin: 0 0 60px 0px;
-    padding: 5px 5px 5px 5px;
-}
-.main{
-    /*yet to be designed*/
-    width: 300px;
-
+text-align: center; /* center the text*/
+margin: 0 0 60px 0px;
 }
 .box{
-    width: 300px;
-    height: 250px;
-    border: 1px solid  hsl(0, 2%, 88%);
-    border-radius: 5px;
-    box-sizing: border-box;
-    margin-bottom: 20px;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-}
-.main{
-    border: 1px solid  transparent;
+width: 300px;
+height: 250px;
+border: 1px solid  transparent;
+border-radius: 5px;
+box-sizing: border-box;
+margin-bottom: 20px;
+box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 .Supervisor{
-    border-top: 5px solid hsl(180, 62%, 55%); /*change color of the top border*/
+border-top: 5px solid hsl(180, 62%, 55%); /*change color of the top border*/
 }
 .Team{
-    border-top: 5px solid hsl(0, 78%, 62%); /*change color of the top border*/
+border-top: 5px solid hsl(0, 78%, 62%); /*change color of the top border*/
 }
 .Karma{
-    border-top: 5px solid hsl(34, 97%, 64%); /*change color of the top border*/
+border-top: 5px solid hsl(34, 97%, 64%); /*change color of the top border*/
 }
 .Calculator{
-    border-top: 5px solid  hsl(212, 86%, 64%); /*change color of the top border*/
+border-top: 5px solid  hsl(212, 86%, 64%); /*change color of the top border*/
 
 }
 img{
-    position: relative; /*make the png image relative to its original position and move it*/
-    left: 200px;
-    top: 30px;
+position: relative; /*make the png image relative to its original position and move it*/
+left: 200px;
+top: 30px;
+}
+a{
+color: #000000;
+text-decoration: none;
+font-size: 1.2rem;
+font-weight: 500;
+}
+.powered{
+text-align: center; /* center the text*/
+color: hsl(234, 12%, 34%);
+font-size: 1.5rem;
+font-weight: 600;
+margin: 0 0 15px 5px;    
+}
+@media (min-width: 375px) and (max-width: 1024px) {
+.main{
+    width: 300px;
+}
+}
+@media (min-width: 1024px) {
+    .main{
+        width: 550px;
+    }
+    .parent {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 30px;
+    }
+    .Supervisor{
+        grid-area: 2 / 2 / 4 / 3;
+    }
+    .Team{
+        grid-area: 1 / 3 / 3 / 4;
+    }
+    .Karma{
+        grid-area: 3 / 3 / 5 / 4;
+    }
+    .Calculator{
+        grid-area: 2 / 4 / 4 / 5;
+    }
+ 
 }

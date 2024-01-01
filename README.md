@@ -25,9 +25,6 @@ Users should be able to:
 ### Screenshot
 
 ![](./images/Screenshot%20Four%20card%20feature%20section%20Desktop.png)
-
-![](./images/Screenshot%20Four%20card%20feature%20section%20mobile.png)
-
 ### Links
 
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
